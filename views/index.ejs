@@ -2,10 +2,47 @@
 <html>
   <head>
     <title><%= title %></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel='stylesheet' href='/stylesheets/style.css' />
+
   </head>
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+
+    <form>
+      <div class="form-group">
+        <label for="titleSelector"></label>
+        <select class="form-control" id="titleSelector">
+          <option>Ms.</option>
+          <option>Miss</option>
+          <option>Mrs.</option>
+          <option>Mr.</option>
+          <option>Dr.</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="firstNameInput"></label>
+        <input type="text" class="form-control" id="firstNameInput" placeholder="First Name">
+      </div>
+      <div class="form-group">
+        <label for="lastNameInput"></label>
+        <input type="text" class="form-control" id="lastNameInput" placeholder="Last Name">
+      </div>
+      <div class="form-group">
+        <label for="schoolEmailInput"></label>
+        <input type="text" class="form-control" id="schoolEmailInput" placeholder="School Email">
+      </div>
+      <div class="form-group">
+        <label for="userNameInput"></label>
+        <input type="text" class="form-control" id="userNameeInput" placeholder="Username">
+      </div>
+      <div class="form-group">
+        <label for="passwordInput"></label>
+        <input type="text" class="form-control" id="passwordInput" placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+
   </body>
 </html>
